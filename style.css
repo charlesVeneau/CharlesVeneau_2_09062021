@@ -1,0 +1,21 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-size: 16px;
+}
+
+.blue{
+    color: #0065FC;
+}
+
+.lightBlue{
+    color: #DEEBFF;
+}
+
+.grey{
+    color: #F2F2F2;
+}
