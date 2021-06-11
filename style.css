@@ -1,21 +1,67 @@
 *, *::before, *::after{
     box-sizing: border-box;
+    margin: 0;
 }
 
 body{
     font-family: 'Raleway', sans-serif;
-    margin: 0;
-    font-size: 16px;
+    margin: 0 auto 0 auto;
+    font-size: 12px;
+    max-width: 1338px;
 }
 
-.blue{
-    color: #0065FC;
+h1, h2, h3, h4, h5 , h6{
+    font-weight: 700;
 }
 
-.lightBlue{
-    color: #DEEBFF;
+
+/* Variables */
+:root{
+    --blue: #0065FC;
+    --lightBlue: #DEEBFF;
+    --grey: #F2F2F2;
+    --black: #000000;
+}
+/* !Variable */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: flex-end ;
+}
+.navbar_img{
+    width: 100px;
+    float: left;
+}
+.navbar_list{
+    display: flex;
+    /* flex-flow: row-reverse; */
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.grey{
-    color: #F2F2F2;
+.navbar_listElt{
+    list-style-type: none;
+    padding: 48px 22px 24px 28px;
+    border-top: 2px solid var(--blue);
+}
+
+.navbar_link{
+    text-decoration: none;
+    color: var(--black);
+}
+
+.inscription{
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.navbar_link:hover{
+    color: var(--blue);
+}
+.navbar_link:active{
+    color: var(--blue);
+
 }
