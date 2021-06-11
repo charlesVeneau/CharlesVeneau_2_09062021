@@ -3,6 +3,19 @@
     margin: 0;
 }
 
+/* Variables */
+:root{
+    --blue: #0065FC;
+    --lightBlue: #DEEBFF;
+    --grey: #F2F2F2;
+    --black: #000000;
+}
+/* !Variable */
+
+html{
+    background-color: var(--grey);
+}
+
 body{
     font-family: 'Raleway', sans-serif;
     margin: 0 auto 0 auto;
@@ -23,15 +36,15 @@ a {
     color: var(--black);
 }
 
-/* Variables */
-:root{
-    --blue: #0065FC;
-    --lightBlue: #DEEBFF;
-    --grey: #F2F2F2;
-    --black: #000000;
+.blue{
+    color: var(--blue);
 }
-/* !Variable */
 
+.grey{
+    color: #d2d2d2;
+}
+
+/* Navbar */
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -68,3 +81,4 @@ a {
     color: var(--blue);
 
 }
+/* !Navbar */
