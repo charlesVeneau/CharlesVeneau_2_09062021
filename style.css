@@ -52,10 +52,24 @@ a {
 }
 
 /* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-.inscription {
+.navbar_link.inscription {
+  order: 1;
   color: var(--blue);
   font-weight: 700;
+  text-align: end;
+}
+
+.navbar_link {
+  order: 2;
+  width: 187px;
+  text-align: center;
 }
 
 .navbar_link:hover {
