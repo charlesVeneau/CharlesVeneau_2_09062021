@@ -1,84 +1,99 @@
-*, *::before, *::after{
-    box-sizing: border-box;
-    margin: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
 }
 
 /* Variables */
-:root{
-    --blue: #0065FC;
-    --lightBlue: #DEEBFF;
-    --grey: #F2F2F2;
-    --black: #000000;
+:root {
+  --blue: #0065fc;
+  --lightBlue: #deebff;
+  --grey: #f2f2f2;
+  --black: #000000;
 }
 /* !Variable */
 
-html{
-    background-color: var(--grey);
+html {
+  background-color: var(--grey);
 }
 
-body{
-    font-family: 'Raleway', sans-serif;
-    margin: 0 auto 0 auto;
-    font-size: 16px;
-    max-width: 1338px;
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0 auto 0 auto;
+  font-size: 16px;
+  max-width: 1338px;
 }
 
-h1, h2, h3, h4, h5 , h6{
-    font-weight: 700;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
-    color: var(--black);
+  text-decoration: none;
+  color: var(--black);
 }
 
-.blue{
-    color: var(--blue);
+.blue {
+  color: var(--blue);
 }
 
-.grey{
-    color: #d2d2d2;
+.grey {
+  color: #d2d2d2;
 }
 
 /* Navbar */
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    align-items: flex-end ;
-}
-.navbar_img{
-    width: 100px;
-    float: left;
-}
-.navbar_list{
-    display: flex;
-    /* flex-flow: row-reverse; */
-    flex-wrap: wrap-reverse;
-    justify-content: space-between;
-    align-items: center;
+
+.inscription {
+  color: var(--blue);
+  font-weight: 700;
 }
 
-.navbar_listElt{
-    
-    padding: 48px 22px 24px 28px;
-    border-top: 2px solid var(--blue);
+.navbar_link:hover {
+  color: var(--blue);
 }
-
-.inscription{
-    color: var(--blue);
-    font-weight: 700;
-}
-
-.navbar_link:hover{
-    color: var(--blue);
-}
-.navbar_link:active{
-    color: var(--blue);
-
+.navbar_link:active {
+  color: var(--blue);
 }
 /* !Navbar */
+
+/* Header */
+.header_title {
+  font-size: 1.375em;
+}
+
+.header_form,
+#ville,
+.submit_button {
+  font-weight: 700;
+  font-size: 1.125em;
+}
+
+/* Hebergements */
+
+#hebergements {
+  margin: 1em;
+}
+.hebergements {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hebergement_img {
+  /* max-width: 100%; */
+  /* object-fit: contain; */
+  max-width: 375px;
+}
+
+.img {
+  max-width: 100%;
+}
