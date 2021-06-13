@@ -1,41 +1,52 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-/* Variables */
-:root {
-  --blue: #0065fc;
-  --lightBlue: #deebff;
-  --grey: #f2f2f2;
-  --black: #000000;
-}
-/* !Variable */
-
-html {
-  background-color: var(--grey);
-}
-
-body {
-  font-family: "Raleway", sans-serif;
-  margin: 0 auto 0 auto;
-  font-size: 16px;
-  max-width: 1338px;
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+  font-size: 100%;
   font-weight: 700;
 }
 
-li {
-  list-style-type: none;
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* !Reset */
+
+/* Variables */
+:root {
+  --blue: #0065fc;
+  --lightBlue: #deebff;
+  --lightgrey: #f2f2f2;
+  --black: #000000;
+}
+/* !Variable */
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  max-width: 1338px;
+  background-color: var(--lightgrey);
 }
 
 a {
@@ -71,6 +82,10 @@ a {
   font-weight: 700;
   font-size: 1.125em;
 }
+/* Main */
+.main_content {
+  margin: 22px;
+}
 
 /* Hebergements */
 
@@ -92,11 +107,35 @@ a {
   max-width: 100%;
 }
 
+/* Activites */
+.activite,
+.activite_small {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+.activite_img {
+  border-radius: 36px 36px 0 0;
+  /* height: 134px; */
+}
+
+.activite_img img {
+}
+
+.activite_title {
+  padding: 22px;
+}
+/* !Activites */
+
 /* Footer */
 
-footer {
+.footer {
   margin: 22px;
   width: 100%;
+}
+
+.footer_figures {
+  margin: 0 8px;
 }
 
 .footer_list_title {
