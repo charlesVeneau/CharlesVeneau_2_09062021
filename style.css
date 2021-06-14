@@ -106,15 +106,92 @@ a {
 /* !Navbar */
 
 /* Header */
+.header {
+  padding: 2em 1.25em;
+}
+
 .header_title {
   font-size: 1.375em;
+  margin-bottom: 0.8rem;
+}
+
+.header_text {
+  margin-bottom: 2em;
 }
 
 .header_form,
 #ville,
-.submit_button {
+.submit_btn {
   font-weight: 700;
-  font-size: 1.125em;
+  font-size: 1.125rem;
+}
+
+.header_form {
+  display: flex;
+  align-items: center;
+}
+
+.form_label {
+  padding: 0.6em;
+}
+#ville {
+  border: none;
+  padding-left: 2em;
+  width: 14em;
+}
+
+.submit_btn {
+  border: none;
+  border-radius: 14px;
+  background-color: var(--blue);
+  color: #ffffff;
+  padding: 0.9em;
+}
+
+.btn_text {
+  display: none;
+}
+
+/* Filters*/
+.filters_list {
+  display: flex;
+  flex-flow: wrap;
+  column-gap: 0.6rem;
+  row-gap: 1rem;
+  margin: 1rem 0;
+}
+
+.filter_elt {
+  position: relative;
+  border: 2px solid #d2d2d2;
+  font-weight: 700;
+  padding: 0.8em 1.2em 0.8em 3.8em;
+  border-radius: 50em;
+}
+
+.filter_elt .fas {
+  color: var(--blue);
+  background-color: var(--lightBlue);
+  padding: 1.1em;
+  border-radius: 50%;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+}
+
+.filter_info {
+  margin: 2rem 0;
+  display: flex;
+  align-items: baseline;
+}
+
+.filter_info .fas {
+  color: var(--blue);
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #d2d2d2;
+  border-radius: 25em;
+  font-size: 0.75rem;
+  margin-right: 0.5rem;
 }
 /* Main */
 .main_content {
