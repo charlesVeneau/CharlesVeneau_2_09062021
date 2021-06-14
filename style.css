@@ -47,6 +47,7 @@ body {
   font-size: 16px;
   max-width: 1338px;
   background-color: var(--lightgrey);
+  margin: auto;
 }
 
 a {
@@ -63,10 +64,43 @@ a {
 }
 
 /* Navbar */
+
+.navbar_img {
+  margin: 1.25em;
+}
+
+.navbar_elts {
+}
+.navbar_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar_listElt {
+  width: 50vw;
+  text-align: center;
+  padding-bottom: 1em;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar_listElt:hover {
+  border-bottom: 3px solid var(--blue);
+}
+
 .navbar_link:hover {
   color: var(--blue);
 }
 .navbar_link:active {
+  color: var(--blue);
+}
+
+.inscription {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 2.3em;
+  margin-right: 1.25em;
+  font-weight: 700;
   color: var(--blue);
 }
 /* !Navbar */
@@ -84,27 +118,13 @@ a {
 }
 /* Main */
 .main_content {
-  margin: 22px;
+  display: none;
 }
 
 /* Hebergements */
 
 #hebergements {
-  margin: 1em;
-}
-.hebergements {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.hebergement_img {
-  /* max-width: 100%; */
-  /* object-fit: contain; */
-  max-width: 375px;
-}
-
-.img {
-  max-width: 100%;
+  display: none;
 }
 
 /* Activites */
@@ -119,9 +139,6 @@ a {
   /* height: 134px; */
 }
 
-.activite_img img {
-}
-
 .activite_title {
   padding: 22px;
 }
@@ -130,8 +147,7 @@ a {
 /* Footer */
 
 .footer {
-  margin: 22px;
-  width: 100%;
+  padding: 1.375rem;
 }
 
 .footer_figures {
@@ -151,4 +167,8 @@ a {
 
 .footer_list_elt {
   padding: 8px 0;
+}
+
+.footer_list_elt:hover {
+  color: var(--blue);
 }
