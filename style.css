@@ -244,14 +244,63 @@ a {
 }
 
 /* Hebergements */
-
+.section_hebergements {
+  margin-top: 1rem;
+}
 .hebergements {
-  display: none;
+  padding: 0.4em;
+}
+
+.hebergement {
+  width: 100%;
+  height: 190px;
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+.hebergement_img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.heb_info {
+  margin: 0.6rem;
+}
+
+.hebergement .notation {
+  margin-top: 0.3rem;
+}
+
+.more_link {
+  font-size: 1.125rem;
+  font-weight: 700;
 }
 
 /* Activites */
 .activites {
-  display: none;
+  margin: 3.6rem 0;
+}
+
+.activites_title {
+  margin-bottom: 2rem;
+}
+
+.activite,
+.activite_small {
+  height: 178px;
+  margin-bottom: 3rem;
+}
+
+.activite_img {
+  width: 100%;
+  height: 132px;
+  object-fit: cover;
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.activite_title {
+  margin: 1rem;
 }
 /* !Activites */
 
