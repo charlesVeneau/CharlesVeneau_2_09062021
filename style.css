@@ -49,7 +49,6 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   max-width: 1338px;
-  background-color: var(--lightgrey);
   margin: auto;
 }
 
@@ -108,7 +107,12 @@ a {
 
 /* Header */
 .main_content {
-  padding: 2em 1.25em;
+  padding: 2em 0;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.header {
+  padding: 0 1.25rem;
 }
 
 .header_title {
@@ -130,15 +134,21 @@ a {
 .header_form {
   display: flex;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .form_label {
-  padding: 0.6em;
+  padding: 0.9rem;
+  padding-left: 1rem;
+  background-color: var(--lightgrey);
+  border-radius: 0.8rem 0 0 0.8rem;
+  border: 1px solid var(--lightgrey);
 }
 #ville {
   border: none;
-  padding-left: 2em;
-  width: 14em;
+  padding: 0.9rem 1em;
+  padding-right: 0;
+  border: 1px solid var(--lightgrey);
 }
 
 .submit_btn {
@@ -146,7 +156,8 @@ a {
   border-radius: 14px;
   background-color: var(--blue);
   color: #ffffff;
-  padding: 0.9em;
+  padding: 0.9rem 1rem;
+  margin-left: -1.1rem;
 }
 
 .btn_text {
@@ -154,6 +165,10 @@ a {
 }
 
 /* Filters*/
+.filter_checkbox {
+  display: none;
+}
+
 .filters_list {
   display: flex;
   flex-flow: wrap;
@@ -196,11 +211,16 @@ a {
 }
 /* Main */
 .card {
-  cursor: pointer;
+  border-radius: 1rem;
+  margin-bottom: 0.75rem;
+  padding: 0.4em;
+  box-shadow: 0 8px 15px #00000020;
+  background-color: #fff;
 }
 /* Populaires */
 .populaires {
-  padding: 2rem 0;
+  padding: 2rem 1.25rem;
+  background-color: var(--lightgrey);
 }
 
 .flex_container {
@@ -214,11 +234,6 @@ a {
 .pop_card {
   height: 145px;
   display: flex;
-  border-radius: 1rem;
-  margin-bottom: 0.75rem;
-  /* background-color: limegreen; */
-  padding: 0.4em;
-  box-shadow: 0 13px 25px -8px #00000020;
 }
 
 .pop_img {
@@ -248,16 +263,11 @@ a {
 
 /* Hebergements */
 .section_hebergements {
-  margin-top: 1rem;
+  padding: 2rem 1.25rem;
 }
 .hebergements {
   padding: 0.4em;
-}
-
-.hebergement {
-  width: 100%;
-  height: 190px;
-  margin: 0.5rem 0 1.5rem 0;
+  margin-bottom: 2rem;
 }
 
 .hebergement_img {
@@ -280,19 +290,16 @@ a {
   font-weight: 700;
 }
 
+.section_title {
+  margin-bottom: 1rem;
+}
 /* Activites */
 .activites {
-  margin: 3.6rem 0;
+  padding: 2rem 1.25rem 1rem 1.25rem;
 }
 
 .activites_title {
-  margin-bottom: 2rem;
-}
-
-.activite,
-.activite_small {
-  height: 178px;
-  margin-bottom: 3rem;
+  margin-bottom: 1.4rem;
 }
 
 .activite_img {
@@ -311,6 +318,7 @@ a {
 
 .footer {
   padding: 1.375rem;
+  background-color: var(--lightgrey);
 }
 
 .footer_menus {
