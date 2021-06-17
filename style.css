@@ -67,6 +67,10 @@ a {
 
 /* Navbar */
 
+.header_navbar {
+  position: relative;
+}
+
 .navbar_img {
   margin: 1.25em;
 }
@@ -79,12 +83,17 @@ a {
 .navbar_listElt {
   width: 50vw;
   text-align: center;
-  padding-bottom: 1em;
-  border-bottom: 3px solid transparent;
+  border-bottom: 3px solid var(--lightgrey);
 }
 
 .navbar_listElt:hover {
+  color: var(--blue);
   border-bottom: 3px solid var(--blue);
+}
+
+.navbar_link {
+  display: block;
+  padding-bottom: 1em;
 }
 
 .navbar_link:hover {
@@ -108,10 +117,10 @@ a {
 /* Header */
 .main_content {
   padding: 2em 0;
-  overflow-y: scroll;
   scroll-behavior: smooth;
 }
 .header {
+  position: relative;
   padding: 0 1.25rem;
 }
 
@@ -133,8 +142,9 @@ a {
 
 .header_form {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   margin-bottom: 2rem;
+  height: 54px;
 }
 
 .form_label {
@@ -149,6 +159,11 @@ a {
   padding: 0.9rem 1em;
   padding-right: 0;
   border: 1px solid var(--lightgrey);
+}
+
+#ville:focus {
+  outline: none;
+  border-color: #000000;
 }
 
 .submit_btn {
@@ -266,7 +281,7 @@ a {
   padding: 2rem 1.25rem;
 }
 .hebergements {
-  padding: 0.4em;
+  padding: 0 0.4em;
   margin-bottom: 2rem;
 }
 
@@ -277,7 +292,7 @@ a {
   border-radius: 0.8rem 0.8rem 0 0;
 }
 
-.heb_info {
+.card_info {
   margin: 0.6rem;
 }
 
@@ -291,7 +306,7 @@ a {
 }
 
 .section_title {
-  margin-bottom: 1rem;
+  margin-bottom: 1.4rem;
 }
 /* Activites */
 .activites {
@@ -300,6 +315,7 @@ a {
 
 .activites_title {
   margin-bottom: 1.4rem;
+  margin: 1rem;
 }
 
 .activite_img {
@@ -309,9 +325,6 @@ a {
   border-radius: 0.8rem 0.8rem 0 0;
 }
 
-.activite_title {
-  margin: 1rem;
-}
 /* !Activites */
 
 /* Footer */
