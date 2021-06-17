@@ -195,6 +195,9 @@ a {
   margin-right: 0.5rem;
 }
 /* Main */
+.card {
+  cursor: pointer;
+}
 /* Populaires */
 .populaires {
   padding: 2rem 0;
@@ -215,7 +218,7 @@ a {
   margin-bottom: 0.75rem;
   /* background-color: limegreen; */
   padding: 0.4em;
-  box-shadow: 0 8px 28px -10px #00000020;
+  box-shadow: 0 13px 25px -8px #00000020;
 }
 
 .pop_img {
