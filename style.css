@@ -366,7 +366,7 @@ a {
   padding: 8px 0;
 }
 
-.footer_list_elt:hover {
+.footer_list_elt a:hover {
   color: var(--blue);
 }
 
@@ -375,6 +375,7 @@ a {
   .header_navbar {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
   }
 
   .logo {
@@ -396,10 +397,16 @@ a {
   .navbar_listElt {
     width: auto;
     border-bottom: none;
+    border-top: 2px solid transparent;
+  }
+  .navbar_listElt:hover {
+    border-top: 2px solid var(--blue);
+    border-bottom: none;
   }
 
-  .navbar_link {
-    padding-bottom: 0;
+  .navbar_link,
+  .inscription {
+    padding: 2.6rem 2rem 2rem 2rem;
   }
 
   /* Header */
