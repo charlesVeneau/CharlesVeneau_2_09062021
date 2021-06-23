@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+  </head>
+  <body>
+    <style>
+      body {
+        margin: 60px auto;
+        max-width: 800px;
+      }
+      .container {
+        border: 2px solid blue;
+        padding: 1rem;
+        height: 50vh;
+      }
+
+      .flex {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: flex-start;
+        gap: 1rem;
+      }
+
+      .element {
+        width: 20%;
+        height: 50%;
+        border-radius: 1rem;
+        background-color: pink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        flex-grow: 1;
+      }
+    </style>
+    <div class="container flex">
+      <div class="element">1</div>
+      <div class="element">2</div>
+      <div class="element">3</div>
+      <div class="element">4</div>
+      <div class="element">5</div>
+      <div class="element">6</div>
+      <div class="element">7</div>
+      <div class="element">8</div>
+    </div>
+  </body>
+</html>
