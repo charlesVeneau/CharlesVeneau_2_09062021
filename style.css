@@ -55,6 +55,9 @@ body {
 a {
   text-decoration: none;
   color: var(--black);
+  display: block;
+  padding: 0.4rem;
+  height: 100%;
 }
 
 .blue {
@@ -147,7 +150,6 @@ a {
 
 .header_form {
   display: flex;
-  align-items: stretch;
   margin-bottom: 2rem;
   height: 54px;
 }
@@ -160,10 +162,10 @@ a {
   border: 1px solid var(--lightgrey);
 }
 #ville {
-  border: none;
   padding: 0.9rem 1em;
   padding-right: 0;
   border: 1px solid var(--lightgrey);
+  width: 200px;
 }
 
 #ville:focus {
@@ -238,7 +240,6 @@ a {
 .card {
   border-radius: 1rem;
   margin-bottom: 0.75rem;
-  padding: 0.4em;
   box-shadow: 0 8px 15px #00000020;
   background-color: #fff;
 }
@@ -311,7 +312,7 @@ a {
 .more_link {
   font-size: 1.125rem;
   font-weight: 700;
-  padding: 0.4rem;
+  display: inline;
 }
 
 .section_title {
@@ -344,7 +345,7 @@ a {
 
 .footer_elts {
   padding: 1.375rem;
-  max-width: 1338px;
+  max-width: 1440px;
   margin: auto;
 }
 
@@ -369,6 +370,11 @@ a {
 
 .footer_list_elt a:hover {
   color: var(--blue);
+}
+@media screen and (min-width: 375px) {
+  #ville {
+    width: auto;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -508,7 +514,8 @@ a {
   }
 
   .card.activite,
-  .activite_small {
+  .activite_small,
+  .activite_medium {
     height: 316px;
     width: 30%;
     margin-bottom: 0;
@@ -518,7 +525,6 @@ a {
     margin: 0 0.6rem;
     display: flex;
     align-items: center;
-    height: 20%;
   }
 
   .activite_img {
@@ -533,7 +539,7 @@ a {
   }
 
   .footer_elts {
-    padding: 2rem 3.2rem 0 3.2rem;
+    padding: 2rem 3.2rem;
   }
 }
 
@@ -558,7 +564,6 @@ a {
     width: 145px;
     border-radius: 0.8rem 0 0 0.8rem;
   }
-
   .pop_card a {
     flex-flow: row;
   }
@@ -580,7 +585,13 @@ a {
   }
 
   .activite_small {
-    height: 45%;
+    height: 40%;
+    width: 22%;
+    margin-bottom: 0;
+  }
+
+  .activite_medium {
+    height: 50%;
     width: 22%;
     margin-bottom: 0;
   }
@@ -590,7 +601,15 @@ a {
   }
 
   .activite_small .activite_img {
-    height: 74%;
+    height: 65%;
+    object-position: top;
+  }
+  .activite_medium .activite_img {
+    height: 73%;
+  }
+
+  .img--top {
+    object-position: top;
   }
 
   .activite_title {
@@ -601,13 +620,15 @@ a {
     height: 13%;
   }
 
-  .activite_small .card_info {
+  .activite_medium .card_info {
     height: 26%;
+  }
+  .activite_small .card_info {
+    height: 34%;
   }
   .footer_elts {
     display: flex;
     justify-content: flex-start;
     gap: 15%;
-    padding: 2rem 0 0 0;
   }
 }
