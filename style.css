@@ -212,6 +212,11 @@ a {
   cursor: pointer;
 }
 
+.filter_elt:hover {
+  background-color: var(--blue);
+  color: #fff;
+}
+
 .filter_elt .fas {
   color: var(--blue);
   background-color: var(--lightBlue);
