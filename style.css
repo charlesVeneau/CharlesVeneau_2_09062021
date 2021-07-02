@@ -38,9 +38,9 @@ select {
 
 /* Variables */
 :root {
-  --blue: #0065fc;
-  --lightBlue: #deebff;
-  --lightgrey: #f2f2f2;
+  --primary: #0065fc;
+  --secondary: #deebff;
+  --tertary: #f2f2f2;
   --black: #000000;
 }
 /* !Variable */
@@ -61,7 +61,7 @@ a {
 }
 
 .blue {
-  color: var(--blue);
+  color: var(--primary);
 }
 
 .grey {
@@ -89,12 +89,12 @@ a {
 .navbar_listElt {
   width: 50vw;
   text-align: center;
-  border-bottom: 3px solid var(--lightgrey);
+  border-bottom: 3px solid var(--tertary);
 }
 
 .navbar_listElt:hover {
-  color: var(--blue);
-  border-bottom: 3px solid var(--blue);
+  color: var(--primary);
+  border-bottom: 3px solid var(--primary);
 }
 
 .navbar_link {
@@ -103,10 +103,10 @@ a {
 }
 
 .navbar_link:hover {
-  color: var(--blue);
+  color: var(--primary);
 }
 .navbar_link:active {
-  color: var(--blue);
+  color: var(--primary);
 }
 
 .inscription {
@@ -116,7 +116,7 @@ a {
   margin-top: 2.3em;
   margin-right: 1.25em;
   font-weight: 700;
-  color: var(--blue);
+  color: var(--primary);
 }
 /* !Navbar */
 
@@ -157,14 +157,14 @@ a {
 .form_label {
   padding: 0.9rem;
   padding-left: 1rem;
-  background-color: var(--lightgrey);
+  background-color: var(--tertary);
   border-radius: 0.8rem 0 0 0.8rem;
-  border: 1px solid var(--lightgrey);
+  border: 1px solid var(--tertary);
 }
 #ville {
   padding: 0.9rem 1em;
   padding-right: 0;
-  border: 1px solid var(--lightgrey);
+  border: 1px solid var(--tertary);
   width: 200px;
 }
 
@@ -176,7 +176,7 @@ a {
 .submit_btn {
   border: none;
   border-radius: 14px;
-  background-color: var(--blue);
+  background-color: var(--primary);
   color: #ffffff;
   padding: 0.9rem 1rem;
   margin-left: -1.1rem;
@@ -213,13 +213,13 @@ a {
 }
 
 .filter_elt:hover {
-  background-color: var(--blue);
+  background-color: var(--primary);
   color: #fff;
 }
 
 .filter_elt .fas {
-  color: var(--blue);
-  background-color: var(--lightBlue);
+  color: var(--primary);
+  background-color: var(--secondary);
   padding: 1.1em;
   border-radius: 50%;
   position: absolute;
@@ -234,7 +234,7 @@ a {
 }
 
 .filter_info .fas {
-  color: var(--blue);
+  color: var(--primary);
   padding: 0.4rem 0.6rem;
   border: 1px solid #d2d2d2;
   border-radius: 25em;
@@ -251,7 +251,7 @@ a {
 /* Populaires */
 .populaires {
   padding: 2rem 1.25rem;
-  background-color: var(--lightgrey);
+  background-color: var(--tertary);
 }
 
 .flex_container {
@@ -345,7 +345,7 @@ a {
 /* Footer */
 
 .footer {
-  background-color: var(--lightgrey);
+  background-color: var(--tertary);
 }
 
 .footer_elts {
@@ -374,7 +374,7 @@ a {
 }
 
 .footer_list_elt a:hover {
-  color: var(--blue);
+  color: var(--primary);
 }
 @media screen and (min-width: 375px) {
   #ville {
@@ -413,7 +413,7 @@ a {
     border-top: 2px solid transparent;
   }
   .navbar_listElt:hover {
-    border-top: 2px solid var(--blue);
+    border-top: 2px solid var(--primary);
     border-bottom: none;
   }
 
@@ -485,7 +485,7 @@ a {
   .populaires,
   #hebergements {
     border-radius: 2rem;
-    background-color: var(--lightgrey);
+    background-color: var(--tertary);
     padding-bottom: 0;
   }
 
